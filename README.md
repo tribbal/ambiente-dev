@@ -18,12 +18,25 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
                git config --global user.name "Your Name"
                uTILIze seu usuario do GITHUB
 3.2 - Instalar VSCODE - choco install vscode
-3.3 - Instalar JAVA - choco install jkd8
-3.4 - Instalr Androide SDK Tools - choco install android-sdk
-3.5 - Instalar NodeJS - choco install nodejs-lts
-3.6 - Instalar ConEmu (opicinal ) - choco install conemu
+3.3 - Instalar Node JS(NPM) - choco install nodejs-lts 
+3.4 - Crome - choco install googlechrome
+3.5 - Instalar JAVA - choco install jdk8
+      teste com java -version
+3.6 - Android SDK - choco install android-sdk
 
-    - Crome - choco install googlechrome
+4 - [ TESTANDO ANDROID SDK ]
+    4.1 - Abra o prompt(cmd, conEmue, Powershell)
+    4.2 - Digite adb na linha de comando : adb -- help  
+5 - Criando AVD para emular culular Android
+   5.1. sdkmanager
+        Se der uma mensagem "Warning: Fiel C:Users\nomeDoUsuario\.android\repositories.cfg could not be load"
+        Crie o arquivo repositories.cfg no diretorio .android que esta seur diretorio de usuari em Users ou Usuarios 
+   5.2. sdkmanager --licenses
+        Após esse comando o sistema vai lhe pedir permissão para instalar as lincessas é digitar  "y"
+   5.3. sdkmanager --list
+   5.4. sdkmanager "system-images;android-26;google_apis;x86" (baixando imagem, e api - AVD )
+   5.5. sdkmanager "platform-tools" "platforms;android-26"
+      
     - Firefox 
     - ConEmu ( Prompt de Comandu )- choco install conemu
 3 - Instala4 - VSCODE
@@ -32,7 +45,7 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
 7 - Maquina Virtual
 8 - Ubuntu na Maquina Virtual 
     No Ubunto ambiente de Backend
-   NODE JS , MySQL  
+   
      
 
 
