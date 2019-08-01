@@ -18,7 +18,10 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
                git config --global user.name "Your Name"
                uTILIze seu usuario do GITHUB
 3.2 - Instalar VSCODE - choco install vscode
-3.3 - 
+3.3 - Instalar JAVA - choco install jkd8
+3.4 - Instalr Androide SDK Tools - choco install android-sdk
+3.5 - Instalar NodeJS - choco install nodejs-lts
+3.6 - Instalar ConEmu (opicinal ) - choco install conemu
 
     - Crome - choco install googlechrome
     - Firefox 
