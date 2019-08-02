@@ -28,14 +28,16 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
     4.1 - Abra o prompt(cmd, conEmue, Powershell)
     4.2 - Digite adb na linha de comando : adb -- help  
 5 - Criando AVD para emular culular Android
-   5.1. sdkmanager
+   5.1. sdkmanager ( Cria/atualiza lista repositorios)
         Se der uma mensagem "Warning: Fiel C:Users\nomeDoUsuario\.android\repositories.cfg could not be load"
         Crie o arquivo repositories.cfg no diretorio .android que esta seur diretorio de usuari em Users ou Usuarios 
-   5.2. sdkmanager --licenses
+   5.2. sdkmanager --licenses ( este comando baixa as lincensas necessarias para utilizar as imagens)
         Após esse comando o sistema vai lhe pedir permissão para instalar as lincessas é digitar  "y"
-   5.3. sdkmanager --list
+   5.3. sdkmanager --list ( exibe lista das imagens disponiveis para baixar do repositorio )
    5.4. sdkmanager "system-images;android-26;google_apis;x86" (baixando imagem, e api - AVD )
    5.5. sdkmanager "platform-tools" "platforms;android-26"
+   5.6 - 
+   5.7 - avdmanager create avd -n "teste"  -k "system-images;android-26;google_apis;x86"
       
     - Firefox 
     - ConEmu ( Prompt de Comandu )- choco install conemu
