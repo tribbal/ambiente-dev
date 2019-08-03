@@ -38,6 +38,11 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
    5.5. sdkmanager "platform-tools" "platforms;android-26"
    5.6 - 
    5.7 - avdmanager create avd -n "teste"  -k "system-images;android-26;google_apis;x86"
+   5.8 - emulator -avd teste
+        Caso de o erro abaixo
+        [13300]:ERROR:android/android-emu/android/qt/qt_setup.cpp:28:Qt library not found at ..\emulator\lib64\qt\lib
+        Could not launch 'C:\Users\marcu\..\emulator\qemu\windows-x86_64\qemu-system-i386.exe': No such file or directory
+        Coloque o dirotorio do  EMULATOR no PATH do Windows
       
     - Firefox 
     - ConEmu ( Prompt de Comandu )- choco install conemu
