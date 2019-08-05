@@ -48,12 +48,20 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
     5.10 - Com passo anterior foi criada a EXTRAS no diretorio do SDK. EntrE em extras\intel\Hardware_Accelerated_Execution_Manager  e click no arquivo intelhaxm-android.exe, e inicie a instalação.(next,next,next)
     5.11 - Finalmenente podemos subir o AVD com o seguinte comand emulator -avd teste 
     Ufa!
-      
-    - Firefox 
-    - ConEmu ( Prompt de Comandu )- choco install conemu
 
-6 - Fluter 
-7 - Maquina Virtual8 - Ubuntu na Maquina Virtual 
+ 6 - [ Instalando ambiente FLUTTER ]
+ 6.1 instalando o SDK do Dart - choco install dart-sdk
+     Teste Drive - dart --version
+ 6.2 instalando Flutter - choco install flutter
+     Teste Driver - flutter doctor
+     Tive que setar manulmente o PATH do flutter pois a instalação estava com o endereço errado
+     C:\tools\fluttter\fltter\bin e rodei novamente "flutter doctor"
+ 6.3 - Executando checklist do doctor
+       6.3.1  
+      
+    
+    ConEmus
+    Maquina Virtual8 - Ubuntu na Maquina Virtual 
     No Ubunto ambiente de Backend
    
      
