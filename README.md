@@ -36,7 +36,7 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
    5.3. sdkmanager --list ( exibe lista das imagens disponiveis para baixar do repositorio )
    5.4. sdkmanager "system-images;android-26;google_apis;x86" (baixando imagem, e api - AVD )
    5.5. sdkmanager "platform-tools" "platforms;android-26"
-   5.6 - 
+   5.6 -sdkmanager  "platform-tools" "platforms;android-27" "build-tools;27.0.3"
    5.7 - avdmanager create avd -n "teste"  -k "system-images;android-26;google_apis;x86"
    5.8 - emulator -avd teste
         Caso de o erro abaixo
@@ -55,9 +55,11 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
  6.2 instalando Flutter - choco install flutter
      Teste Driver - flutter doctor
      Tive que setar manulmente o PATH do flutter pois a instalação estava com o endereço errado
-     C:\tools\fluttter\fltter\bin e rodei novamente "flutter doctor"
- 6.3 - Executando checklist do doctor
-       6.3.1  
+     Seteir "C:\tools\fluttter\fltter\bin" e rodei novamente "flutter doctor"
+ 6.3 - Executando checklist do "flutter doctor"
+       6.3.1 Setar o PATH do SDK Android Tools
+              
+        
       
     
     ConEmus
