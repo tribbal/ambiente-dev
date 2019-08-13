@@ -22,25 +22,34 @@ LINHA DE COMANDO PARA INSTALAR CHOCOLATYE pelo CMD
 3.4 - Crome - choco install googlechrome
 3.5 - Instalar JAVA - choco install jdk8
       teste com java -version
-3.6 - Android SDK - choco install android-sdk
-
-4 - [ TESTANDO ANDROID SDK ]
+3.6 - Instalando Python( 
+4 - [ Instalando ANDROID SDK ]
+    4.0 - choco install android-sdk
     4.1 - Abra o prompt(cmd, conEmue, Powershell)
     4.2 - Digite adb na linha de comando : adb -- help  
-5 - Criando AVD para emular culular Android
+5 - [ Criando AVD para emular culular Android ]
    5.1. sdkmanager ( Cria/atualiza lista repositorios)
         Se der uma mensagem "Warning: Fiel C:Users\nomeDoUsuario\.android\repositories.cfg could not be load"
         Crie o arquivo repositories.cfg no diretorio .android que esta seur diretorio de usuari em Users ou Usuarios 
    5.2. sdkmanager --licenses ( este comando baixa as lincensas necessarias para utilizar as imagens)
         Após esse comando o sistema vai lhe pedir permissão para instalar as lincessas é digitar  "y"
    5.3. sdkmanager --list ( exibe lista das imagens disponiveis para baixar do repositorio )
-   5.4. sdkmanager "system-images;android-26;google_apis;x86" (baixando imagem, e api - AVD )
-   5.5. sdkmanager "platform-tools" "platforms;android-26"
-   5.6 -sdkmanager  "platform-tools" "platforms;android-27" "build-tools;27.0.3"
+   
+   5.ERROR sdkmanager   "platform-tools" "platforms;android-26"
+        [ OBS ]- Quando instalei a plataforma ANDROID 26 o FLUTTER DOCTOR simplesmente não reconheceu o ANDROID SDK, apos instalar 
+                 a plataforma 27 e o rodar novamente "FLUTTER DOCTOR" ele iformou que o FLUTTER requer o ANDROI SDK 28 e o ANDROID BUILD TOOLS 28.0.3
+                 Eu fiquei uma semana batendo a cabeça com isso pq eu queria fazer essa instalação enxuta sem o ANDROID STUDIO
+   5.6 -sdkmanager  "system-images;android-27;google_apis;x86"  "platform-tools" "platforms;android-27" "build-tools;27.0.3"
    5.7 - avdmanager create avd -n "teste"  -k "system-images;android-26;google_apis;x86"
-   5.8 - emulator -avd teste
+
+   5.4. sdkmanager "system-images;android-28;google_apis;x86" (baixando imagem, e api - AVD )
+   5.5. - sdkmanager   "platform-tools" 
+   5.6 - "platforms;android-28" "build-tools;28.0.3"
+   5.7 - avdmanager create avd -n "avd28"  -k "system-images;android-28;google_apis;x86"
+        
+   5.8 - emulator -avd avd28
         Caso de o erro abaixo
-        [13300]:ERROR:android/android-emu/android/qt/qt_setup.cpp:28:Qt library not found at ..\emulator\lib64\qt\lib
+        [13300]:ERROR:android/android-emu/android/qt/qt_setup.cpp:28:Qt library not found oat ..\emulator\lib64\qt\lib
         Could not launch 'C:\Users\marcu\..\emulator\qemu\windows-x86_64\qemu-system-i386.exe': No such file or directory
         Coloque o dirotorio do  EMULATOR no PATH do Windows
         
